@@ -59,4 +59,13 @@ def Sample2(win):
     Label(screennew,text=('Feeling:')).place(x=5,y=150)
     Label(screennew, text=('Emotion:')).place(x=5,y=190)
 
-   
+    name = Entry(screennew, width=(20))
+    name.place(x=270,y=35)
+    carieer = Entry(screennew, width=20)
+    carieer.place(x=270,y=70)
+    verb = Entry(screennew,width=20)
+    verb.place(x=270,y=110)
+    feeling = Entry(screennew,width=20)
+    feeling.place(x=270,y=150)
+    emotion = Entry(screennew,width=20)
+    emotion.place(x=270,y=190)
