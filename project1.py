@@ -44,4 +44,8 @@ def Sample2(win):
            to do {verb} because it make me to be so proud and to feel {feeling}
            so that make me to {emotion} always.'''
 
-        
+        t1.geometry(newGeometry='500x500')
+        Label(t1, text=('Story'), wraplength=t1.winfo_width()).place(x=150,y=310)
+        Label(t1, text=Text, wraplength=t1.winfo_width()).place(x=0,y=330) 
+
+    
