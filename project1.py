@@ -86,6 +86,10 @@ screen.geometry('500x500')
 screen.config(bg ="green")
 
 Label(screen, text=('Simple game for children')). place(x=150,y=0)
+submitbutton = Button(screen, text=('Simple intro'), font=('Times new roman',12), command=lambda:Sample1(screen), bg='green')
+submitbutton.place(x=200,y=70)
+sample2button = Button(screen, text=('Introduction'), font=('Times',12), command=lambda: Sample2(screen), bg=('green'))
+sample2button.place(x=200,y=150)
 
 screen.update()
 screen.mainloop()
