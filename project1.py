@@ -31,4 +31,8 @@ def Sample1(win):
     food = Entry(Newscreen, width=20)
     food.place(x=270,y=190)
 
-    
+    button = Button(Newscreen, text=('submit'), font=('times',12), background=("blue"), command=lambda:sinal(Newscreen, name.get(), age.get(), music.get(), drink.get(), food.get()))
+    button.place(x=150,y=230)
+
+    Newscreen.mainloop
+
