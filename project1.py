@@ -80,5 +80,12 @@ screen.title('my trial')
 screen.geometry('500x500')
 screen.config(bg ="green")
 
+screen = Tk()
+screen.title('my trial')
+screen.geometry('500x500')
+screen.config(bg ="green")
+
+Label(screen, text=('Simple game for children')). place(x=150,y=0)
+
 screen.update()
 screen.mainloop()
