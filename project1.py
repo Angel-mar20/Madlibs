@@ -51,3 +51,12 @@ def Sample2(win):
     screennew = Toplevel(win, bg="orange") 
     screennew.title("another trial")
     screennew.geometry('500x500')
+
+    Label(screennew,text=('Introduction')). place(x=190,y=0)
+    Label(screennew,text=('Name:')).place(x=5,y=35)
+    Label(screennew,text=('Carieer:')).place(x=5,y=70)
+    Label(screennew, text=('Verb:')).place(x=5,y=110)
+    Label(screennew,text=('Feeling:')).place(x=5,y=150)
+    Label(screennew, text=('Emotion:')).place(x=5,y=190)
+
+   
