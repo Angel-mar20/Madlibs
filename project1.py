@@ -69,3 +69,9 @@ def Sample2(win):
     feeling.place(x=270,y=150)
     emotion = Entry(screennew,width=20)
     emotion.place(x=270,y=190)
+
+    button = Button(screennew, text=('submit'), font=('times',12), background=('green'), command=lambda: final(screennew, name.get(), carieer.get(), verb.get(), feeling.get(), emotion.get()))
+    button.place(x=150,y=250)
+
+    screennew.mainloop()
+
