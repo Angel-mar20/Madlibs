@@ -48,4 +48,6 @@ def Sample2(win):
         Label(t1, text=('Story'), wraplength=t1.winfo_width()).place(x=150,y=310)
         Label(t1, text=Text, wraplength=t1.winfo_width()).place(x=0,y=330) 
 
-    
+    screennew = Toplevel(win, bg="orange") 
+    screennew.title("another trial")
+    screennew.geometry('500x500')
