@@ -36,3 +36,12 @@ def Sample1(win):
 
     Newscreen.mainloop
 
+def Sample2(win):
+    def final(t1:Toplevel, name, carieer, verb, feeling, emotion,):
+
+        Text = f'''
+           Hello my name is {name} my carieer is {carieer} always i like
+           to do {verb} because it make me to be so proud and to feel {feeling}
+           so that make me to {emotion} always.'''
+
+        
