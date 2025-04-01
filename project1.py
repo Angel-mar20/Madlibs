@@ -75,3 +75,10 @@ def Sample2(win):
 
     screennew.mainloop()
 
+screen = Tk()
+screen.title('my trial')
+screen.geometry('500x500')
+screen.config(bg ="green")
+
+screen.update()
+screen.mainloop()
