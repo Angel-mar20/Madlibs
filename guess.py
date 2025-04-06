@@ -15,4 +15,8 @@ score = IntVar()
 final_score= IntVar()
 guess= IntVar()
 
+hint.set("Guess a number between 1 to 50 ")
+score.set(5)
+final_score.set(score.get())
+
 win.mainloop()
