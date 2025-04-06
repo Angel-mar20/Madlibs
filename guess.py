@@ -54,6 +54,7 @@ Label(win, text='I challange you to guess the number ',font=("Courier", 25)).pla
 
 Label(win, text='Score out of 5',font=("Courier", 25)).place(relx=0.3, rely=0.85, anchor=CENTER)
 
+Button(win, width=8, text='CHECK', font=('Courier', 25), command=fun, relief=GROOVE,bg='light blue').place(relx=0.5, rely=0.5, anchor=CENTER)
 
 
 
