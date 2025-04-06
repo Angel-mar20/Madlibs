@@ -50,6 +50,11 @@ Entry(win, textvariable=hint, width=50,font=('Courier', 15), relief=GROOVE,bg='o
 
 Entry(win, text=final_score, width=2,font=('Ubuntu', 24), relief=GROOVE).place(relx=0.61, rely=0.85, anchor=CENTER)
 
+Label(win, text='I challange you to guess the number ',font=("Courier", 25)).place(relx=0.5, rely=0.09, anchor=CENTER)
+
+Label(win, text='Score out of 5',font=("Courier", 25)).place(relx=0.3, rely=0.85, anchor=CENTER)
+
+
 
 
 win.mainloop()
