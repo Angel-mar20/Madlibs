@@ -1,10 +1,14 @@
+import tkinter as tk
+from tkinter import *
 import random
-from tkinter import Tk
 
-win = Tk()
+
+
+win = tk.Tk()
 win.title("guess game")
 win.geometry('750x750')
 win.config(bg="light blue")
+num=random.randint(1,50)
 
 hint = StringVar()
 score = IntVar()
