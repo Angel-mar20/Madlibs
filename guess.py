@@ -22,5 +22,9 @@ final_score.set(score.get())
 def fun():
     x=guess.get()
     final_score.set(score.get())
+    if score.get()>0:
+         print("")
+    else:
+         hint.set("Game Over You Lost")
 
 win.mainloop()
