@@ -19,4 +19,8 @@ hint.set("Guess a number between 1 to 50 ")
 score.set(5)
 final_score.set(score.get())
 
+def fun():
+    x=guess.get()
+    final_score.set(score.get())
+
 win.mainloop()
