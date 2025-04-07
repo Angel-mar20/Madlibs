@@ -81,3 +81,7 @@ def UpdateDetail():
 						  """   
 			messagebox.showerror("Error", message1)
 
+def EntryReset():
+	Name.set('')
+	Number.set('')
+
