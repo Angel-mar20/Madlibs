@@ -17,4 +17,7 @@ contactlist = [
     ['John Maheshwari', '98564785'],
     ['Ganesh Pawar','85967412']
     ]
+
+Name = StringVar()
+Number = StringVar()
 root.mainloop()
