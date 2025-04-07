@@ -30,4 +30,11 @@ scroll.config (command=select.yview)
 scroll.pack(side=RIGHT, fill=Y)
 select.pack(side=LEFT,  fill=BOTH, expand=1)
 
+
+def Selected():
+	print("hello",len(select.curselection()))
+	if len(select.curselection())==0:
+		messagebox.showerror("Error", "Please Select the Name")
+	else:
+		return int(select.curselection()[0])
 root.mainloop()
