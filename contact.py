@@ -134,3 +134,4 @@ Select_set()
 
 
 #PythonGeeks - define buttons labels and entry widget 
+Label(root, text = 'Name', font=("Times new roman",25,"bold"), bg = 'SlateGray3').place(x= 30, y=20)
