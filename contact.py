@@ -95,4 +95,12 @@ def Delete_Entry():
         messagebox.showerror("Error", 'Please select the Contact')
 
    
+
+   
 # func to view contact
+def VIEW():
+    NAME, PHONE = contactlist[Selected()]
+    Name.set(NAME)
+    Number.set(PHONE)
+        
+
