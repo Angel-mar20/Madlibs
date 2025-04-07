@@ -125,3 +125,12 @@ def EXIT():
     root.destroy()
 
 
+def Select_set() :
+    contactlist.sort()
+    select.delete(0,END)
+    for name,phone in contactlist :
+        select.insert (END, name)
+Select_set()
+
+
+#PythonGeeks - define buttons labels and entry widget 
