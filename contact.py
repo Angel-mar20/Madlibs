@@ -23,4 +23,11 @@ Number = StringVar()
 
 frame = Frame(root)
 frame.pack(side = RIGHT)
+
+scroll = Scrollbar(frame, orient=VERTICAL)
+select = Listbox(frame, yscrollcommand=scroll.set,font=('Times new roman',16),bg="#f0fffc",width=20,height=20,borderwidth=3,relief="groove")
+scroll.config (command=select.yview)
+scroll.pack(side=RIGHT, fill=Y)
+select.pack(side=LEFT,  fill=BOTH, expand=1)
+
 root.mainloop()
