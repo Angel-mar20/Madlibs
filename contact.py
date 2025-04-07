@@ -103,4 +103,25 @@ def VIEW():
     Name.set(NAME)
     Number.set(PHONE)
         
+def Delete_Entry():
+    if len(select.curselection())!=0:
+        result=messagebox.askyesno('Confirmation','You Want to Delete Contact\n Which you selected')
+        if result==True:
+            del contactlist[Selected()]
+            Select_set()
+    else:
+        messagebox.showerror("Error", 'Please select the Contact')
+
+   
+# func to view contact
+def VIEW():
+    NAME, PHONE = contactlist[Selected()]
+    Name.set(NAME)
+    Number.set(PHONE)
+        
+
+#PythonGeeks- function to exit game window   
+def EXIT():
+    root.destroy()
+
 
