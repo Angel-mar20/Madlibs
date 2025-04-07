@@ -20,4 +20,7 @@ contactlist = [
 
 Name = StringVar()
 Number = StringVar()
+
+frame = Frame(root)
+frame.pack(side = RIGHT)
 root.mainloop()
