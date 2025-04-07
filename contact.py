@@ -1,6 +1,9 @@
+#PythonGeeks - import library
 from tkinter import *
 from tkinter import messagebox
 
+
+#PythonGeeks - Initialize window
 root = Tk()
 root.geometry('700x550')
 root.config(bg = '#d3f3f5')
@@ -21,6 +24,8 @@ contactlist = [
 Name = StringVar()
 Number = StringVar()
 
+
+#PythonGeeks - create frame
 frame = Frame(root)
 frame.pack(side = RIGHT)
 
@@ -31,13 +36,16 @@ scroll.pack(side=RIGHT, fill=Y)
 select.pack(side=LEFT,  fill=BOTH, expand=1)
 
 
+#PythonGeeks - function to get select value
+
 def Selected():
 	print("hello",len(select.curselection()))
 	if len(select.curselection())==0:
 		messagebox.showerror("Error", "Please Select the Name")
 	else:
 		return int(select.curselection()[0])
-	
+    
+#PythonGeeks -function to add new contact
 def AddContact():
     if Name.get()!="" and Number.get()!="":
         contactlist.append([Name.get() ,Number.get()])
@@ -48,4 +56,20 @@ def AddContact():
 
     else:
         messagebox.showerror("Error","Please fill the information")
-root.mainloop()
+
+
+# fun to edit existing contact
+
+def UpdateDetail():
+	if Name.get() and Number.get():
+		contactlist[Selected()] = [Name.get(), Number.get()]
+    
+
+		messagebox.showinfo("Confirmation", "Successfully Update Contact")
+		EntryReset()
+		Select_set()
+
+	elif not(Name.get()) and not(Number.get()) and not(len(select.curselection())==0):
+		messagebox.showerror("Error", "Please fill the information")
+
+	
