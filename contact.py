@@ -37,4 +37,15 @@ def Selected():
 		messagebox.showerror("Error", "Please Select the Name")
 	else:
 		return int(select.curselection()[0])
+	
+def AddContact():
+    if Name.get()!="" and Number.get()!="":
+        contactlist.append([Name.get() ,Number.get()])
+        print(contactlist)
+        Select_set()
+        EntryReset()
+        messagebox.showinfo("Confirmation", "Successfully Add New Contact")
+
+    else:
+        messagebox.showerror("Error","Please fill the information")
 root.mainloop()
