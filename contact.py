@@ -139,6 +139,12 @@ Entry(root, textvariable = Name, width=30).place(x= 200, y=30)
 Label(root, text = 'Contact No.', font=("Times new roman",22,"bold"),bg = 'SlateGray3').place(x= 30, y=70)
 Entry(root, textvariable = Number, width=30).place(x= 200, y=80)
 
+Button(root,text=" ADD", font='Helvetica 18 bold',bg='#e8c1c7', command = AddContact, padx=20). place(x= 50, y=140)
+Button(root,text="EDIT", font='Helvetica 18 bold',bg='#e8c1c7',command = UpdateDetail, padx=20).place(x= 50, y=200)
+Button(root,text="DELETE", font='Helvetica 18 bold',bg='#e8c1c7',command = Delete_Entry, padx=20).place(x= 50, y=260)
+Button(root,text="VIEW", font='Helvetica 18 bold',bg='#e8c1c7', command = VIEW).place(x= 50, y=325)
+Button(root,text="RESET", font='Helvetica 18 bold',bg='#e8c1c7', command = EntryReset).place(x= 50, y=390)
+Button(root,text="EXIT", font='Helvetica 24 bold',bg='tomato', command = EXIT).place(x= 250, y=470)
 
 root.mainloop()
   
