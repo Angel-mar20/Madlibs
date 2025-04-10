@@ -29,3 +29,6 @@ character_string = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz01234567
 password_gen  = Tk()
 password_gen.geometry("350x200")
 password_gen.title("PythonGeeks Password Generator")
+
+title_label = Label(password_gen, text="PythonGeeks Password Generator", font=('Ubuntu Mono',12))
+title_label.pack()
