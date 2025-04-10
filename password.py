@@ -18,3 +18,5 @@ def generate_password():
        password = random.choices(character_string,k=length) 
 
     password=''.join(password)
+    password_v = StringVar()
+    password="Created password: "+str(password)
