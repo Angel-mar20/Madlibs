@@ -21,3 +21,5 @@ def generate_password():
     password_v = StringVar()
     password="Created password: "+str(password)
     password_v.set(password)
+    password_label = Entry(password_gen, bd=0, bg="gray85", textvariable=password_v, state="readonly")
+    password_label.place(x=10, y=140, height=50, width=320)
