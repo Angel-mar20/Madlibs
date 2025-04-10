@@ -16,3 +16,5 @@ def generate_password():
 
     else:
        password = random.choices(character_string,k=length) 
+
+    password=''.join(password)
