@@ -8,4 +8,5 @@ def generate_password():
        repeat = int(repeat_entry.get())
        length = int(length_entry.get())
     except:
-       messagebox.showerror(message="Please key in the required inputs")   
+       messagebox.showerror(message="Please key in the required inputs")
+       return   
