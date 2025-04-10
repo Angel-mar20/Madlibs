@@ -9,4 +9,7 @@ def generate_password():
        length = int(length_entry.get())
     except:
        messagebox.showerror(message="Please key in the required inputs")
-       return   
+       return 
+
+    if repeat == 1:
+       password = random.sample(character_string,length)  
