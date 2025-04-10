@@ -12,4 +12,7 @@ def generate_password():
        return 
 
     if repeat == 1:
-       password = random.sample(character_string,length)  
+       password = random.sample(character_string,length) 
+
+    else:
+       password = random.choices(character_string,k=length) 
