@@ -25,3 +25,7 @@ def generate_password():
     password_label.place(x=10, y=140, height=50, width=320)
 
 character_string = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789!#$%&'()*+,-./:;<=>?@[\]^_`{|}~"
+
+password_gen  = Tk()
+password_gen.geometry("350x200")
+password_gen.title("PythonGeeks Password Generator")
