@@ -20,3 +20,4 @@ def generate_password():
     password=''.join(password)
     password_v = StringVar()
     password="Created password: "+str(password)
+    password_v.set(password)
