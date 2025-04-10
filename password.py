@@ -42,3 +42,6 @@ repeat_label = Label(password_gen, text="Repetition? 1: no repetition, 2: otherw
 repeat_label.place(x=20,y=60)
 repeat_entry = Entry(password_gen, width=3)
 repeat_entry.place(x=300,y=60)
+
+password_button = Button(password_gen, text="Generate Password", command=generate_password)
+password_button.place(x=100,y=100)
