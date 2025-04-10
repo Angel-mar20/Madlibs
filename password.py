@@ -32,3 +32,8 @@ password_gen.title("PythonGeeks Password Generator")
 
 title_label = Label(password_gen, text="PythonGeeks Password Generator", font=('Ubuntu Mono',12))
 title_label.pack()
+
+length_label = Label(password_gen, text="Enter length of password: ")
+length_label.place(x=20,y=30)
+length_entry = Entry(password_gen, width=3)
+length_entry.place(x=190,y=30)
