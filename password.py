@@ -45,3 +45,5 @@ repeat_entry.place(x=300,y=60)
 
 password_button = Button(password_gen, text="Generate Password", command=generate_password)
 password_button.place(x=100,y=100)
+
+password_gen.mainloop()
