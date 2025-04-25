@@ -56,4 +56,14 @@ class TaskManager:
             status = "✓" if task.completed else "✗"
             print(f"{index}. [{status}] {task.title}: {task.description}")
 
-    
+    def update_task(self, index, title=None, description=None):
+        """Update an existing task."""
+        try:
+            task = self.tasks[index - 1]
+            if title:
+                task.title = title
+            if description:
+                task.description = description
+            self.save_tasks()
+            print(f"Task {index} updated successfully.")
+        
