@@ -66,4 +66,9 @@ class TaskManager:
                 task.description = description
             self.save_tasks()
             print(f"Task {index} updated successfully.")
-        
+        except IndexError:
+            print("Error: Task index out of range.")
+        except Exception as e:
+            print(f"An error occurred: {e}")
+
+    
