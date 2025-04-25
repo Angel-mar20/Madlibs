@@ -73,4 +73,12 @@ class TaskManager:
 
     def delete_task(self, index):
         """Delete a task."""
-        
+        try:
+            self.tasks.pop(index - 1)
+            self.save_tasks()
+            print(f"Task {index} deleted successfully.")
+        except IndexError:
+            print("Error: Task index out of range.")
+        except Exception as e:
+            print(f"An error occurred: {e}")
+
