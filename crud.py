@@ -86,8 +86,11 @@ def main():
     task_manager = TaskManager()
     
     while True:
+        print("\nTask Management Application")
+        print("1. Add Task")
+        print("2. View Tasks")
+        print("3. Update Task")
+        print("4. Delete Task")
+        print("5. Exit")
         
-
-
-    
-    
+        
