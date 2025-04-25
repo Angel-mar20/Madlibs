@@ -23,4 +23,13 @@ class TaskManager:
         self.tasks = []
         self.load_tasks()
 
+    def load_tasks(self):
+        """Load tasks from a JSON file."""
+        if os.path.exists(self.filename):
+            try:
+                with open(self.filename, 'r') as file:
+                    self.tasks = [Task(**task) for task in json.load(file)]
+            except (FileNotFoundError, json.JSONDecodeError) as e:
+                print(f"Error loading tasks: {e}")
+
     
