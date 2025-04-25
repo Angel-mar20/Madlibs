@@ -32,4 +32,12 @@ class TaskManager:
             except (FileNotFoundError, json.JSONDecodeError) as e:
                 print(f"Error loading tasks: {e}")
 
+    def save_tasks(self):
+        """Save tasks to a JSON file."""
+        try:
+            with open(self.filename, 'w') as file:
+                json.dump([task.to_dict() for task in self.tasks], file)
+        except IOError as e:
+            print(f"Error saving tasks: {e}")
+
     
