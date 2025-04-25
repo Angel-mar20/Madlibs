@@ -40,4 +40,11 @@ class TaskManager:
         except IOError as e:
             print(f"Error saving tasks: {e}")
 
+    def add_task(self, title, description):
+        """Add a new task."""
+        new_task = Task(title, description)
+        self.tasks.append(new_task)
+        self.save_tasks()
+        print(f"Task '{title}' added successfully.")
+
     
