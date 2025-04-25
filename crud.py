@@ -71,4 +71,6 @@ class TaskManager:
         except Exception as e:
             print(f"An error occurred: {e}")
 
-    
+    def delete_task(self, index):
+        """Delete a task."""
+        
