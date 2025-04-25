@@ -9,5 +9,11 @@ class Task:
 
     def mark_completed(self):
         self.completed = True
-
     
+    def to_dict(self):
+        return {
+            'title': self.title,
+            'description': self.description,
+            'completed': self.completed
+        }
+
