@@ -17,3 +17,10 @@ class Task:
             'completed': self.completed
         }
 
+class TaskManager:
+    def __init__(self, filename='tasks.json'):
+        self.filename = filename
+        self.tasks = []
+        self.load_tasks()
+
+    
