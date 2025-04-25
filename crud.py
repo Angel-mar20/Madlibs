@@ -47,4 +47,13 @@ class TaskManager:
         self.save_tasks()
         print(f"Task '{title}' added successfully.")
 
+    def view_tasks(self):
+        """View all tasks."""
+        if not self.tasks:
+            print("No tasks available.")
+            return
+        for index, task in enumerate(self.tasks, start=1):
+            status = "✓" if task.completed else "✗"
+            print(f"{index}. [{status}] {task.title}: {task.description}")
+
     
