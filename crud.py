@@ -93,4 +93,6 @@ def main():
         print("4. Delete Task")
         print("5. Exit")
         
+        choice = input("Choose an option: ")
+        
         
